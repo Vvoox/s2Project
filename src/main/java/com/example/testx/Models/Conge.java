@@ -34,12 +34,20 @@ public class Conge {
         this.date_Fin = date_Fin;
     }
 
-    public Date getMotif() {
+    public String getMotif() {
         return motif;
     }
 
-    public void setMotif(Date motif) {
+    public void setMotif(String motif) {
         this.motif = motif;
+    }
+
+    public String getEtat() {
+        return etat;
+    }
+
+    public void setEtat(String etat) {
+        this.etat = etat;
     }
 
     public Date getRetour() {
@@ -58,29 +66,15 @@ public class Conge {
         this.duree = duree;
     }
 
-    public boolean isDepasser() {
-        return depasser;
-    }
 
-    public void setDepasser(boolean depasser) {
-        this.depasser = depasser;
-    }
-
-    public boolean isDemande() {
-        return demande;
-    }
-
-    public void setDemande(boolean demande) {
-        this.demande = demande;
-    }
 
     public int getSolde() {
         return solde;
     }
-
     public void setSolde(int solde) {
         this.solde = solde;
     }
+
 
     @Override
     public String toString() {
@@ -88,12 +82,14 @@ public class Conge {
                 "type_Conge='" + type_Conge + '\'' +
                 ", date_Debut=" + date_Debut +
                 ", date_Fin=" + date_Fin +
-                ", motif=" + motif +
                 ", retour=" + retour +
                 ", duree='" + duree + '\'' +
-                ", depasser=" + depasser +
-                ", demande=" + demande +
+                ", motif='" + motif + '\'' +
+                ", etat='" + etat + '\'' +
                 ", solde=" + solde +
                 '}';
     }
+
+
+
 }
